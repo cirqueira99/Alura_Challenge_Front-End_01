@@ -1,18 +1,71 @@
+.body  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-header {
-  width: 1440px;
-  height: 468px;
+	font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.buttons  {
+  border: 1px solid #2A7AE4;
+}
+
+.btn-normal {
+  height: 51px;
+}
+
+.btn-mobile {
+  height: 40px;
+}
+
+.btn-dark {
+  background: #2A7AE4;
+  color: white;
+}
+
+.btn-light {
+  background: #ffffff;
+  color: #2A7AE4;
 }
 
 .p-m0 {
   margin-bottom: 0px;
 }
 
-.menu {
+header, section, footer {
+  width: 1440px;
+}
+
+.menu, .banner, .content, .contact, section, footer div {
+  width: 1440px;
+}
+
+.content, .contact, footer {
+  padding-left: 152px;
+  padding-right: 152px;
+}
+
+header {  
   display: flex;
   flex-direction: column;
+  justify-items: center;
   align-items: center;
-  padding: 0px;
+  height: 468px;
+}
+
+.menu {
+  background-color: white;
+
+  height: 115px;  
+}
+
+.menu nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0px;
   gap: 10px;
 
   background: #FFFFFF;
@@ -20,29 +73,189 @@ header {
   order: 0;
   align-self: stretch;
   flex-grow: 0;
-  height: 115px;
-  width: 100%;
+}
+
+.menu_logo-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  background: #F5F5F5;
+  border-radius: 20px;  
+  border-style: none;
+  text-align: center;
+
+  margin-left: 20px;
+  height: 40px;
+  width: 393px;
+}
+
+.menu_login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu_login button {
+  width: 150px;
 }
 
 .banner {
   height: 352px;
 }
 
-.container{
+.content {
+  background-color: white;
+}
+
+.gallery {
   width: 100%;
+}
+
+.gallery_container {
+  margin: 50px 0px;
+  height: 300px;
+}
+
+.galley-topo {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 15px 0px;
+
+  height: 40px;
+}
+
+.gallery-title{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.gallery-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2A7AE4;
+}
+
+.galley_cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galley_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galley_card .image {
+  height: 174px;
+}
+
+.gallery_description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 5px;
+  width: 176px;
+}
+
+.gallery_description p {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 0px;
+  height: 25px;
+}
+
+.description_product {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #464646;
+}
+
+.description_price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+}
+
+.description_link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2A7AE4;
 }
 
 .contact{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 64px;
-  gap: 115px;
-  background: #EAF2FD;
+  justify-content: space-between;
+  align-items: flex-start;
 
+  background: #EAF2FD;
+  padding: 64px 152px;
   height: 368px;
-  width: 100%;
+}
+
+.contact_logo-topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact_logo, .contact_topics {
+  width: 250px;
+}
+
+.contact_logo, .contact_topics, .forms {
+  height: 240px;
+}
+
+.contact_topics ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  height: 240px;
+}
+
+.forms form{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 240px;
+}
+
+.forms p {  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #464646;
+
+  padding: 0px;
+  margin: 0px;
+}
+
+.form-floating{
+  height: 82px;
+}
+
+.input_container textarea {
+  height: 82px;
+  width: 560px;
 }
 
 footer {
@@ -50,8 +263,12 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 32px;
 gap: 10px;
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
 
 background: #FFFFFF;
 
