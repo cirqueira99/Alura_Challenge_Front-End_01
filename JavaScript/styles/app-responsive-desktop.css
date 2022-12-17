@@ -1,0 +1,28 @@
+@media screen and (max-width: 1024px){
+
+  header, section, footer div, .menu {
+    width: 1024px;
+  }  
+
+  .content, .contact, footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  header {
+    height: 375px;
+  }
+
+  .banner, .banner img {
+    width: 1024px;
+  }
+ 
+  .contact {
+    padding: 32px;
+  }
+
+  .input_container textarea{
+    width: 460px;
+  }
+
+}

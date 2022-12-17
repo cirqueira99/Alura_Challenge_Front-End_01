@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
 
-	font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
+
 
 .buttons  {
   border: 1px solid #2A7AE4;
@@ -34,13 +35,9 @@
   margin-bottom: 0px;
 }
 
-header, section, footer {
-  width: 1440px;
-}
-
-.menu, .banner, .content, .contact, section, footer div {
-  width: 1440px;
-}
+header, section, footer div, .menu {
+  width: 1441px;
+}  
 
 .content, .contact, footer {
   padding-left: 152px;
@@ -65,9 +62,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 0px;
+  padding: 32px 10px;
   gap: 10px;
-
+  
   background: #FFFFFF;
   flex: none;
   order: 0;
@@ -80,8 +77,13 @@ header {
   align-items: center;
   justify-content: space-between;
   justify-items: center;
-
 }
+
+.menu_logo {
+  width: 176px;
+  height: 50px;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -104,10 +106,18 @@ header {
 }
 
 .menu_login button {
-  width: 150px;
+  width: 182px;
+  height: 51px;
+}
+
+.menu_icon-search {
+  height: 40px;
+  width: 40px;
+  display: none;
 }
 
 .banner {
+  width: 1440px;
   height: 352px;
 }
 
@@ -121,19 +131,23 @@ header {
 
 .gallery_container {
   margin: 50px 0px;
-  height: 300px;
+  height: 315px;
 }
 
 .galley-topo {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 
   margin: 15px 0px;
-
   height: 40px;
 }
 
-.gallery-title{
+.galley-topo p {
+  margin: 0px;
+}
+
+.gallery-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
@@ -166,7 +180,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
 
-  padding: 5px;
+  padding: 5px 10px;
   width: 176px;
 }
 
@@ -206,7 +220,6 @@ header {
 
   background: #EAF2FD;
   padding: 64px 152px;
-  height: 368px;
 }
 
 .contact_logo-topics {
@@ -232,7 +245,7 @@ header {
   height: 240px;
 }
 
-.forms form{ 
+.contact .forms form { 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -260,15 +273,8 @@ header {
 
 footer {
 display: flex;
-flex-direction: row;
 justify-content: center;
 align-items: center;
-gap: 10px;
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
 
 background: #FFFFFF;
 

@@ -1,0 +1,101 @@
+@media screen and (max-width: 480px){
+
+  header, section, footer, footer div, .menu {
+    width: 360px;
+  }
+
+  header {
+    height: 264px;
+  }
+
+  header, .contact, .banner, .banner img {
+    width: 100%;
+  }
+
+  .menu_logo-search .search {
+    display: none;
+  }
+
+  .menu_logo, .menu_logo img{
+    width: 100px;
+    height: 28px;
+  }
+
+  .menu_login button {
+    height: 40px;
+    width: 133px;
+  }
+
+  .menu_icon-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner, .banner img {
+    height: 192px;
+  }
+
+  .content{
+    padding:  0px 16px;
+  }
+
+  .gallery_container {
+    height: 558px;
+  }
+
+  .galley_cards {
+    flex-wrap: wrap;
+  }
+
+  .galley_card {
+    margin-bottom: 15px;
+  }
+
+  .galley_card .image img{
+    width: 156px;
+  }
+
+  .gallery_description {
+    padding: 5px 2px;
+    width: 156px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 16px;
+  }
+
+  .contact_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact_topics ul {
+    align-items: center;
+  }
+
+  .contact .forms {
+    margin-top: 50px;
+    width: 328px;
+  }
+
+  .contact .forms form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 328px;
+  }
+
+  .form-floating input, .input_container textarea{
+    width: 328px;
+  }
+
+  footer {
+    padding: 0px;
+  }
+}
