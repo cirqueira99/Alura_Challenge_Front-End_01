@@ -1,0 +1,41 @@
+/* content */
+
+.content {
+  background: #F5F5F5;
+}
+
+.content_forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px;
+  height: 400px;
+}
+
+.content_forms form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 290px;
+  width: 425px;
+}
+
+.content_forms .form_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.content_forms form div {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.content_forms .forms_button button {
+  width: 100%;
+}

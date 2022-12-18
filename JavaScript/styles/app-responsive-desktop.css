@@ -10,10 +10,10 @@
   }
 
   header {
-    height: 375px;
   }
 
   .banner, .banner img {
+    height: 250px;
     width: 1024px;
   }
  

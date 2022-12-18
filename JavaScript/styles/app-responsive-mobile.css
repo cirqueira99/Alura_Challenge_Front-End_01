@@ -5,7 +5,6 @@
   }
 
   header {
-    height: 264px;
   }
 
   header, .contact, .banner, .banner img {
@@ -37,28 +36,8 @@
   }
 
   .content{
+    width: 100%;
     padding:  0px 16px;
-  }
-
-  .gallery_container {
-    height: 558px;
-  }
-
-  .galley_cards {
-    flex-wrap: wrap;
-  }
-
-  .galley_card {
-    margin-bottom: 15px;
-  }
-
-  .galley_card .image img{
-    width: 156px;
-  }
-
-  .gallery_description {
-    padding: 5px 2px;
-    width: 156px;
   }
 
   .contact {

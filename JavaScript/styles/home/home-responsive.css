@@ -1,0 +1,50 @@
+@media screen and (max-width: 1024px){
+
+  .banner, .banner img {
+    height: 250px;
+    width: 1024px;
+  }
+
+  .input_container textarea{
+    width: 460px;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  
+  .gallery-title {
+    font-size: 22px;
+  }
+  
+  .galley_card .image img{
+    width: 164px;
+  }
+
+} 
+
+@media screen and (max-width: 480px){
+
+  .gallery_container {
+    height: 558px;
+  }
+
+  .galley_cards {
+    flex-wrap: wrap;
+  }
+
+  .galley_card {
+    margin-bottom: 15px;
+  }
+
+  .galley_card .image img{
+    width: 156px;
+  }
+
+  .gallery_description {
+    padding: 5px 2px;
+    width: 156px;
+  }
+
+}
+
