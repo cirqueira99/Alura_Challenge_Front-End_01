@@ -1,17 +1,19 @@
 @media screen and (max-width: 480px){
 
   header, section, footer, footer div, .menu {
-    width: 360px;
+    width: 460px;
   }
 
-  header {
-  }
 
-  header, .contact, .banner, .banner img {
+  .contact, .banner, .banner img {
     width: 100%;
   }
 
-  .menu_logo-search .search {
+  .menu nav {
+    padding: 16px 32px;
+  }
+
+  .menu_search {
     display: none;
   }
 
@@ -29,10 +31,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .banner, .banner img {
-    height: 192px;
   }
 
   .content{
@@ -70,7 +68,7 @@
     width: 328px;
   }
 
-  .form-floating input, .input_container textarea{
+  .form-floating input, .form-floating textarea{
     width: 328px;
   }
 

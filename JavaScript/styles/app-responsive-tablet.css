@@ -22,13 +22,8 @@
     height: 28px;
   }
 
-  .search input {
+  .menu_search input {
     width: 272px;
-  }
-
-  .banner, .banner img {
-    width: 768px;
-    height: 280px;
   }
 
   .content{

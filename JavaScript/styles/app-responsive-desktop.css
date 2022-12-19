@@ -4,19 +4,11 @@
     width: 1024px;
   }  
 
-  .content, .contact, footer {
+  .menu nav, .content, .contact, footer {
     padding-left: 32px;
     padding-right: 32px;
   }
 
-  header {
-  }
-
-  .banner, .banner img {
-    height: 250px;
-    width: 1024px;
-  }
- 
   .contact {
     padding: 32px;
   }

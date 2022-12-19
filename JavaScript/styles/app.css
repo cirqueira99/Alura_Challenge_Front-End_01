@@ -13,10 +13,12 @@
 }
 
 .btn-normal {
+  font-size: 16px;
   height: 51px;
 }
 
 .btn-mobile {
+  font-size: 14px;
   height: 40px;
 }
 
@@ -60,7 +62,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 10px;
+  padding: 32px 152px;
   gap: 10px;
   
   background: #FFFFFF;
@@ -70,24 +72,16 @@ header {
   flex-grow: 0;
 }
 
-.menu_logo-search {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  justify-items: center;
-}
-
 .menu_logo {
-  width: 176px;
   height: 50px;
 }
 
-.search {
+.menu_search {
   display: flex;
   align-items: center;
 }
 
-.search input {
+.menu_search input {
   background: #F5F5F5;
   border-radius: 20px;  
   border-style: none;
@@ -101,6 +95,8 @@ header {
 .menu_login {
   display: flex;
   justify-content: flex-end;
+
+  width: 15%;
 }
 
 .menu_login button {
@@ -109,9 +105,8 @@ header {
 }
 
 .menu_icon-search {
-  height: 40px;
-  width: 40px;
   display: none;
+  height: 40px;
 }
 
 .banner {
