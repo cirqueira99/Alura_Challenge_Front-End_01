@@ -63,4 +63,8 @@
   .input_container textarea{
     width: 432px;
   }
+
+  footer {
+    height: 70px;
+  }
 } 
