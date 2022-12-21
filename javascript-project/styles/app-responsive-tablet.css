@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px){
+  
+  header, section, footer div, .menu {
+    width: 768px;
+  }
+
+  .menu {
+    height: 72px;
+  }
+  
+  .menu nav { 
+    padding: 16px 10px;
+  }
+
+  .menu_login button {
+    width: 166px;
+    height: 40px;
+  }
+
+  .menu_logo, .menu_logo img {
+    width: 100px;
+    height: 28px;
+  }
+
+  .menu_search input {
+    width: 272px;
+  }
+
+  .content{
+    padding:  0px 32px;
+  }
+
+  .contact {
+    padding: 32px;
+  }
+
+  .contact_logo-topics {
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  .contact_logo {
+    height: 70px;
+  }
+
+  .contact_topics ul {
+    padding-left: 2px;
+  }
+
+  
+  .contact .forms {
+    width: 432px;
+  }
+  
+  .forms {
+    margin-top: 20px;
+  }
+  
+  .contact .forms form {
+    width: 432px;
+  }
+
+  .input_container textarea{
+    width: 432px;
+  }
+
+  footer {
+    height: 70px;
+  }
+} 
