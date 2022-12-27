@@ -52,9 +52,9 @@
           <img src="../imgs/star-wars-BIG.png" alt="" srcset="">
         </div>
         <div class="product-info">
-          <p class="product-name">Produto XYZ</p>
-          <p class="product-price">R$ 60,00</p>
-          <div class="product-description">
+          <p id="product_name" class="product-name">Produto XYZ</p>
+          <p id="product_price" class="product-price">R$ 60,00</p>
+          <div id="product_desc" class="product-description">
             Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam.
           </div>
         </div>
@@ -64,9 +64,10 @@
         
         <div class="galley-topo">
           <p class="gallery-title">Produtos Similares</p>
+          <p class="gallery-link">Ver Tudo <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
         </div>
 
-        <div class="galley_cards">
+        <div id="gallery_product-similars" class="galley_cards">
           <div class="galley_card">
             <div class="image"><img src="../imgs/star-wars.png" width="176px" height="174px" alt="" srcset=""></div>
             <div class="gallery_description">
@@ -75,52 +76,6 @@
               <p class="description_link">Ver Produto</p>
             </div>              
           </div>
-
-          <div class="galley_card">
-            <div class="image"><img src="../imgs/star-wars.png" width="176px" height="174px" alt="" srcset=""></div>
-            <div class="gallery_description">
-              <p class="description_product">Nome Produto</p>
-              <p class="description_price"><strong>R$ 60,00</strong></p>
-              <p class="description_link">Ver Produto</p>
-            </div>              
-          </div>
-
-          <div class="galley_card">
-            <div class="image"><img src="../imgs/star-wars.png" width="176px" height="174px" alt="" srcset=""></div>
-            <div class="gallery_description">
-              <p class="description_product">Nome Produto</p>
-              <p class="description_price"><strong>R$ 0,00</strong></p>
-              <p class="description_link">Ver Produto</p>
-            </div>              
-          </div>
-
-          <div class="galley_card">
-            <div class="image"><img src="../imgs/star-wars.png" width="176px" height="174px" alt="" srcset=""></div>
-            <div class="gallery_description">
-              <p class="description_product">Nome Produto</p>
-              <p class="description_price"><strong>R$ 0,00</strong></p>
-              <p class="description_link">Ver Produto</p>
-            </div>              
-          </div>
-
-          <!-- <div class="galley_card">
-            <div class="image"><img src="./imgs/star-wars.png" width="176px" height="174px" alt="" srcset=""></div>
-            <div class="gallery_description">
-              <p class="description_product">Nome Produto</p>
-              <p class="description_price"><strong>R$ 0,00</strong></p>
-              <p class="description_link">Ver Produto</p>
-            </div>              
-          </div>
-
-          <div class="galley_card">
-            <div class="image"><img src="./imgs/star-wars.png" width="176px" height="174px" alt="" srcset=""></div>
-            <div class="gallery_description">
-              <p class="description_product">Nome Produto</p>
-              <p class="description_price"><strong>R$ 0,00</strong></p>
-              <p class="description_link">Ver Produto</p>
-            </div>              
-          </div> -->
-
         </div>
       
        </div>
@@ -169,13 +124,12 @@
     
     <footer>
       <div>
-        <p class="p-m0">Desenvolvido por Carlos Cirqueira</p>
-        <p class="p-m0">2022</p>
+        <p class="p-m0">Desenvolvido por Carlos Cirqueira <strong>2022</strong></p>
       </div>
     </footer>
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- <script type="module" src="main.js"></script> -->
+    <script type="module" src="../JS/controllers/product-controller.js"></script>
   </body>
 </html>

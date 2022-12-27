@@ -33,23 +33,23 @@
       "id": 4
     },
     {
-      "name": "Head Set",
+      "name": "Controle Xbox One",
       "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
-      "type_product": "Eletrónico",
-      "category": "Periféricos",
+      "type_product": "Acessório",
+      "category": "Games",
       "price": 4000,
       "id": 5
     },
     {
-      "name": "Mouse Pad",
+      "name": "Controle Xbox One",
       "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
       "type_product": "Acessório",
-      "category": "Periféricos",
+      "category": "Games",
       "price": 4000,
       "id": 6
     },
     {
-      "name": "Caixa de Som Edifier",
+      "name": "Head Set",
       "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
       "type_product": "Eletrónico",
       "category": "Periféricos",
@@ -57,12 +57,28 @@
       "id": 7
     },
     {
+      "name": "Mouse Pad",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Periféricos",
+      "price": 4000,
+      "id": 8
+    },
+    {
       "name": "Caixa de Som Edifier",
       "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
       "type_product": "Eletrónico",
       "category": "Periféricos",
       "price": 4000,
-      "id": 8
+      "id": 9
+    },
+    {
+      "name": "Caixa de Som Edifier",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Eletrónico",
+      "category": "Periféricos",
+      "price": 4000,
+      "id": 10
     },
     {
       "name": "Camiseta Star Wars",
@@ -70,7 +86,7 @@
       "type_product": "Roupa",
       "category": "Diversos",
       "price": 80,
-      "id": 9
+      "id": 11
     },
     {
       "name": "Boneco Naruto",
@@ -78,23 +94,23 @@
       "type_product": "Acessório",
       "category": "Diversos",
       "price": 80,
-      "id": 10
-    },
-    {
-      "name": "Sabre de Luz",
-      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
-      "type_product": "Acessório",
-      "category": "Diversos",
-      "price": 80,
-      "id": 11
-    },
-    {
-      "name": "Sabre de Luz",
-      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
-      "type_product": "Acessório",
-      "category": "Diversos",
-      "price": 80,
       "id": 12
+    },
+    {
+      "name": "Sabre de Luz",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Diversos",
+      "price": 80,
+      "id": 13
+    },
+    {
+      "name": "Sabre de Luz",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Diversos",
+      "price": 80,
+      "id": 14
     }
   ]
 }
