@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <script type="module" src="../JS/controllers/login-controller.js"></script>
     
     <title>Alura Challege Frond End#04</title>
   </head>
@@ -28,7 +30,7 @@
       <div class="menu">
         <nav>        
           <div class="menu_logo">
-            <img src="../imgs/Logo.png" alt="" srcset="">
+            <a href="../index.html"><img src="../imgs/Logo.png" alt="" srcset=""></a>
           </div>
 
           <div class="menu_search">
@@ -47,22 +49,21 @@
 
     <section class="content">
       <div class="content_forms">
-        <form action="#">
-
+        <form action="../pages/homeAdmin.html" method="GET" onsubmit="return getsForm()">
           <div class="form_title"><p>Iniciar Sessão</p></div>
 
           <div class="form-floating mb-3 mt-3">
-            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+            <input type="email" class="form-control" id="useremail" placeholder="User email" name="useremail" data-form-useremail>
             <label for="email">Email</label>
           </div>
 
           <div class="form-floating mb-3 mt-3">
-            <input type="password" class="form-control" id="email" placeholder="Enter email" name="email">
-            <label for="email">Senha</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password" data-form-password>
+            <label for="email">Password</label>
           </div>
 
           <div class="forms_button">
-            <button class="buttons btn-normal btn-dark">Entrar</button>
+            <button class="buttons btn-normal btn-dark" type="submit" data-form-btn>Entrar</button>
           </div>
         </form>
       </div>
@@ -115,6 +116,6 @@
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- <script type="module" src="main.js"></script> -->
+   
   </body>
 </html>

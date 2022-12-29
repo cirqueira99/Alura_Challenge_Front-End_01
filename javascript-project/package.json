@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run open\" ",
     "open": "live-server",
-    "server": "json-server --watch ./database/products.json"
+    "server": "json-server --watch ./database/db.json"
   },
   "author": "",
   "license": "ISC",

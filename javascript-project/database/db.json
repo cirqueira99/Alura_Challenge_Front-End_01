@@ -112,5 +112,12 @@
       "price": 80,
       "id": 14
     }
+  ],
+  "users": [
+    {
+      "useremail": "cirqs@gmail.com",
+      "password": "MTIz",
+      "id": 1
+    }
   ]
 }
