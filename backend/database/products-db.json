@@ -1,0 +1,117 @@
+{
+  "products": [
+    {
+      "name": "God of War",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Jogo",
+      "category": "Games",
+      "price": 80,
+      "id": 1
+    },
+    {
+      "name": "Xbox One",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Console",
+      "category": "Games",
+      "price": 4000,
+      "id": 2
+    },
+    {
+      "name": "Controle Xbox One",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Games",
+      "price": 4000,
+      "id": 3
+    },
+    {
+      "name": "Controle Xbox One",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Games",
+      "price": 4000,
+      "id": 4
+    },
+    {
+      "name": "Controle Xbox One",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Games",
+      "price": 4000,
+      "id": 5
+    },
+    {
+      "name": "Controle Xbox One",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Games",
+      "price": 4000,
+      "id": 6
+    },
+    {
+      "name": "Head Set",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Eletrónico",
+      "category": "Periféricos",
+      "price": 4000,
+      "id": 7
+    },
+    {
+      "name": "Mouse Pad",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Periféricos",
+      "price": 4000,
+      "id": 8
+    },
+    {
+      "name": "Caixa de Som Edifier",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Eletrónico",
+      "category": "Periféricos",
+      "price": 4000,
+      "id": 9
+    },
+    {
+      "name": "Caixa de Som Edifier",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Eletrónico",
+      "category": "Periféricos",
+      "price": 4000,
+      "id": 10
+    },
+    {
+      "name": "Camiseta Star Wars",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Roupa",
+      "category": "Diversos",
+      "price": 80,
+      "id": 11
+    },
+    {
+      "name": "Boneco Naruto",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Diversos",
+      "price": 80,
+      "id": 12
+    },
+    {
+      "name": "Sabre de Luz",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Diversos",
+      "price": 80,
+      "id": 13
+    },
+    {
+      "name": "Sabre de Luz",
+      "description": "blablabalbalbalblablallblabblblalbalbalbalbalbalbablablablabalbalbalbablablbalblablab",
+      "type_product": "Acessório",
+      "category": "Diversos",
+      "price": 80,
+      "id": 14
+    }
+  ]
+  
+}
