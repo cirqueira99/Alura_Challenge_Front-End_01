@@ -39,7 +39,7 @@ const createDivGallery = (category, products) => {
     `
     <div id="${product.id}" class="galley_card">
       <div class="image">
-        <img src="./imgs/star-wars.png" width="176px" height="174px" alt="" srcset="">
+        <img src="http://localhost:3005/image/file/${product.imageName}" width="176px" height="174px" alt="" srcset="">
       </div>
       <div class="gallery_description">
         <p class="description_product">${product.name}</p>
