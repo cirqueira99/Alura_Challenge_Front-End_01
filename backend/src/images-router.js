@@ -10,14 +10,12 @@ const routers = express.Router();
 server.use(express.json({ extended: true }))
 
 routers.use("/file", express.static("uploads"))
+// routers.use("/files", express.static("uploads"))
 
 routers.post("/upload", multer(multerConfig).single("file"), (req, res) => {
-  console.log("RESQUISIÇÂO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>: ")
-  console.log(req.file)
-  if(req.file){
-
-    return res.json(req.file);
-  }
+  // console.log("RESQUISIÇÂO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>: ")
+  //console.log(req.body)
+  if(req.file){ return res.json(req.file);  }
 
   return res.status(400).json({
     erro: true,
