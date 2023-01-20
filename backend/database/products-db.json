@@ -10,6 +10,31 @@
       "id": 2
     },
     {
+      "name": "Xbox",
+      "typeProduct": "Jogo",
+      "category": "Games",
+      "description": "TESTE",
+      "price": 233,
+      "imageName": "1673363922514_189716.png",
+      "id": 7
+    },{
+      "name": "PS4",
+      "typeProduct": "Jogo",
+      "category": "Games",
+      "description": "TESTE",
+      "price": 233,
+      "imageName": "1673363922514_189717.png",
+      "id": 8
+    },{
+      "name": "God of War",
+      "typeProduct": "Jogo",
+      "category": "Games",
+      "description": "TESTE",
+      "price": 233,
+      "imageName": "1673363922514_189718.png",
+      "id": 9
+    },
+    {
       "name": "Head Set",
       "typeProduct": "Eletrónico",
       "category": "Periféricos",
@@ -40,10 +65,19 @@
       "name": "Sabre de Luz",
       "typeProduct": "Acessório",
       "category": "Diversos",
-      "description": "testeee",
-      "price": 20,
-      "imageName": "1673447035281_2.png",
+      "description": "ffffffffff",
+      "price": 40,
+      "imageName": "1673447035240.png",
       "id": 6
+    },
+    {
+      "name": "Sabre de Luz",
+      "typeProduct": "Acessório",
+      "category": "Diversos",
+      "description": "ffffffffff",
+      "price": 40,
+      "imageName": "1673447035240.png",
+      "id": 22
     }
   ]
 }
