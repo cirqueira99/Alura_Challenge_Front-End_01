@@ -16,24 +16,24 @@ export class Product {
   };
 
   getProduct = (id) => {
-    return fetch(`http://localhost:3000N/products/${id}`, {
+    return fetch(`http://localhost:3005/products/id/${id}`, {
       method: 'GET'
     })
-    .then(resposta => {
-        if(resposta.ok){
-          return resposta.json()
+    .then(response => {
+        if(response.ok){
+          return response.json()
         }
-        throw new Error('Não foi possível encontrar os produtos!')
+        throw new Error('Could not find the product!')
     })
   }  
 
   getProducts = () => {
-    return fetch(`http://localhost:3000/products`)
-    .then(resposta => {
-        if(resposta.ok){
-          return resposta.json()
+    return fetch(`http://localhost:3005/products/all`)
+    .then(response => {
+        if(response.ok){
+          return response.json()
         }
-        throw new Error('Não foi possível encontrar os produtos!')
+        throw new Error('Could not find the products!')
     })
   }  
 
@@ -52,59 +52,41 @@ export class Product {
         imageName : this.imageName
       })
     })
-    .then( resposta => {
-        if(resposta.ok){
-          return resposta.json()
+    .then( response => {
+        if(response.ok){
+          return response.json()
         }
-        throw new Error('Não foi possível criar uma conta')
+        throw new Error('Could not uploaded the product!')
     })
   }
 
-  // updateAccount(id, date_account, description, type_account, cost, payment) {
-  //   return fetch(`http://localhost:3000/contas/${id}`, {
-  //       method: 'PUT',
-  //       headers: { 
-  //           'Content-type' : 'application/json'
-  //       },
-  //       body: JSON.stringify({
-  //         description: description,
-  //         type_account: type_account,
-  //         cost: cost,
-  //         date_account: date_account,
-  //         payment: payment
-  //       })
-  //   })
-  //   .then( resposta => {
-  //       if(resposta.ok){
-  //           return resposta.json()
-  //       }
-  //       throw new Error('Não foi possível detalhar um cliente')
-  //   })
-  // }
-
-  // deleteAccount = (id) => { 
-    
-  //   return fetch(`http://localhost:3000/contas/${id}`, {
-  //       method: 'DELETE'
-  //   })
-  //   .then( resposta => { 
-  //       if(!resposta.ok){
-  //       throw new Error('Não foi possível deletar a conta')
-  //       }
-  //   })
-  // }
-
-  uploadProductImg = (formData) => {
-    return fetch(`http://localhost:3005/image/upload`, {
-      method: 'POST',
-      body: formData
+  updateProduct(camp) {
+    const atribuite = camp;
+    return fetch(`http://localhost:3000/products/${id}`, {
+        method: 'PUT',
+        headers: { 
+            'Content-type' : 'application/json'
+        },
+        body: JSON.stringify({
+          atribuite: camp
+        })
     })
-    .then(resposta => {
-        if(resposta.ok){
-          return resposta.json()
+    .then( response => {
+        if(response.ok) return response.json()
+       
+        throw new Error('Não foi possível detalhar um cliente')
+    })
+  };
+
+  deleteProduct(id){   
+    return fetch(`http://localhost:3000/products/${id}`, {
+        method: 'DELETE'
+    })
+    .then( response => { 
+        if(!response.ok){
+        throw new Error('Não foi possível deletar a conta')
         }
-        throw new Error('Não foi possível salvar a imagem!')
     })
-  }   
+  }  
   
 }

@@ -1,7 +1,6 @@
 import { Product } from "../../entity/Product.js";
 
 const productClass = new Product();
-const response = productClass.getProducts();
 
 export const renderGallery = async() => {
     
@@ -34,7 +33,7 @@ const createDivGallery = (category, products) => {
   let elements_gallery = ``;
 
   products.forEach((product) => {
-    const money = product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    const money = product.price?.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     const card = 
     `
     <div id="${product.id}" class="galley_card">

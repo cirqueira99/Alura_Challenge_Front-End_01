@@ -179,6 +179,14 @@ header {
   width: 560px;
 }
 
+.gallery_card {
+ cursor: pointer;
+}
+
+.gallery_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 footer {
   display: flex;
   justify-content: center;

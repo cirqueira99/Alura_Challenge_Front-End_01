@@ -26,6 +26,17 @@
   line-height: 38px;
 }
 
+.plus {
+  font-size: 24px;
+  cursor: pointer;
+  color: #2A7AE4;
+}
+
+.plus:hover{
+  font-size: 28px;
+  color: #286fcd;
+}
+
 .gallery {
   display: flex;
   flex-flow: wrap;
@@ -36,12 +47,34 @@
   flex-direction: column;
   align-items: center;
 
-  margin: 35px 6px;
+  margin: 35px 8px;
 }
 
 .gallery_card .image {
   height: 174px;
+  width: 176px;
 }
+
+.icons-product {
+  display: flex;
+  justify-content: end;
+  
+  font-size: 20px;
+  color: white;
+  background-color: #0000000d;
+  position: absolute;
+  height: 30px;
+  width: 174px;
+}
+
+.icon-delete, .icon-edit {
+  margin: 10px 5px 0px 15px;
+} 
+
+.icon-delete:hover, .icon-edit:hover {
+  color: #286fcd;
+  cursor: pointer;
+} 
 
 .gallery_description {
   display: flex;
@@ -74,9 +107,9 @@
   color: #464646;
 }
 
-.description_link {
+.description_id {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 19px;
   color: #2A7AE4;
 }
