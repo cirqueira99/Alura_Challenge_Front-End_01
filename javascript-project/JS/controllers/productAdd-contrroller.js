@@ -25,7 +25,7 @@ const register = async (event) => {
       product.setNameImageProduct(responseImage.filename);      
      
       const responseProduct = await product.postProduct();      
-      renderModal('modal-sucess', 'close-success');      
+      renderModal('modal-success', 'close-success');      
       
     } catch (error) {
       renderModal('modal-error','close-error');

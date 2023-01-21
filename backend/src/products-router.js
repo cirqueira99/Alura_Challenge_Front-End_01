@@ -12,7 +12,7 @@ routers.get("/all",(req, res)=>{
       if(response){
         return res.status(200).json(response.data);     
       }
-      throw new Error('Não foi possível encontrar os produtos!')
+      throw new Error('Could not find the products!')
     });
     
   } catch (error) {
@@ -28,14 +28,16 @@ routers.get("/id/:id",(req, res) => {
   try {
     const response = axios.get(`http://localhost:3000/products/${req.params.id}`)
     .then(response => {
+     
       if(response){
         return res.status(200).json(response.data);
       }
-      throw new Error('Não foi possível encontrar os produtos!')
+      throw new Error('Could not find the product!')
     });
     
-  } catch (error) {
-    return res.status(400).json({
+  } catch (error) { 
+    console.log("ERROR >>>>>>>>>>>>>>>>>>>>")
+    return res.status().json({
       erro: true,
       mensagem: `Error: ${error}`
     })
@@ -43,19 +45,20 @@ routers.get("/id/:id",(req, res) => {
 })
 
 routers.delete("/id/:id", (req, res) => {
-  console.log("REQ>>>>>>: " + req.params.id)
+  
   try {      
     const response = axios.delete(`http://localhost:3000/products/${req.params.id}`)
     .then(response => {
       if(response){
-        console.log(response.data)
+        console.log("Product " + response.data.name +" deleted!");
         return res.status(200).json(response.data);
       }
-      throw new Error('Não foi possível deletar o produto!')
+      throw new Error('Could not delete the products!')
     });
 
   } catch (error) {
-    return res.status(400).json({
+    
+    return res.status().json({
       erro: true,
       mensagem: `Error: ${error}`
     })

@@ -13,8 +13,7 @@ routers.use("/file", express.static("uploads"))
 // routers.use("/files", express.static("uploads"))
 
 routers.post("/upload", multer(multerConfig).single("file"), (req, res) => {
-  // console.log("RESQUISIÇÂO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>: ")
-  //console.log(req.body)
+ 
   if(req.file){ return res.json(req.file);  }
 
   return res.status(400).json({
@@ -34,7 +33,7 @@ routers.delete("/delete/:id", (req,res) => {
         mensagem: "could not delete the image: " + file
       })
     }
-    
+    console.log("Image " + file + "deleted!")
     return res.status(200).json(file);
   });  
 });
