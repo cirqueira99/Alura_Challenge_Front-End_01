@@ -18,8 +18,6 @@ const getProducts = async() => {
     for (let i = 0; i < deleteProduct_icons.length; i++) {      
       deleteProduct_icons[i].addEventListener('click', DeleteProduct.del);  
       editProduct_icons[i].addEventListener('click', UpdateProduct.up); 
-
-      //console.log(deleteProduct_icons[i])
     }
   } catch (error) {    
     console.log(error);

@@ -79,7 +79,7 @@ export class Product {
   };
 
   deleteProduct(id){   
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`http://localhost:3005/products/id/${id}`, {
         method: 'DELETE'
     })
     .then( response => { 

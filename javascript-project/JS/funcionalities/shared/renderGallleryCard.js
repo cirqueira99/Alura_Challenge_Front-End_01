@@ -6,7 +6,7 @@ const create = (product) => {
     <div id="${product.id}" class="gallery_card">
       <div class="image">
         <div class="icons-product">
-          <i id="d${product.id}" class="icon-delete fa fa-trash" aria-hidden="true"></i>
+          <i id="d${product.id}" class="icon-delete fa fa-trash" aria-hidden="true" ></i>
           <i id="e${product.id}" class="icon-edit fa fa-pencil" aria-hidden="true"></i>
         </div>
         <img src="http://localhost:3005/image/file/${product.imageName}" width="176px" height="174px" alt="" srcset="">
