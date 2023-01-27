@@ -60,21 +60,25 @@ export class Product {
     })
   }
 
-  updateProduct(camp) {
-    const atribuite = camp;
-    return fetch(`http://localhost:3000/products/${id}`, {
+  updateProduct(idProduct) {
+    return fetch(`http://localhost:3005/products/update/${idProduct}`, {
         method: 'PUT',
         headers: { 
-            'Content-type' : 'application/json'
+          'Content-type' : 'application/json'
         },
         body: JSON.stringify({
-          atribuite: camp
+          name: this.name,
+          typeProduct: this.typeProduct,
+          category: this.category,
+          description: this.description,
+          price: this.price,
+          imageName : this.imageName
         })
     })
     .then( response => {
         if(response.ok) return response.json()
        
-        throw new Error('Não foi possível detalhar um cliente')
+        throw new Error('Não foi possível atualizar o produto');
     })
   };
 
@@ -84,7 +88,7 @@ export class Product {
     })
     .then( response => { 
         if(!response.ok){
-        throw new Error('Não foi possível deletar a conta')
+        throw new Error('Não foi possível deletar o produto');
         }
     })
   }  

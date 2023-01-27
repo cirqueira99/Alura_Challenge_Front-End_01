@@ -19,8 +19,7 @@
       "id": 3
     },
     {
-      "name": "Sabre de Luz",
-      "typeProduct": "Acessório",
+      "name": "Batmannn",
       "category": "Diversos",
       "description": "Teste",
       "price": 33,
@@ -71,6 +70,15 @@
       "price": 233,
       "imageName": "1673363922514_189718.png",
       "id": 9
+    },
+    {
+      "name": "Head Set",
+      "typeProduct": "Eletrónico",
+      "category": "Periféricos",
+      "description": "testeeeeeeeeeeeeeeeeeeeeee",
+      "price": 45,
+      "imageName": "1673374004766_33.png",
+      "id": 10
     }
   ]
 }

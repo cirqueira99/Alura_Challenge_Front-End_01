@@ -8,13 +8,7 @@ module.exports = {
     },
     filename: (req, file, cb) => {
       const time = new Date().getTime();
-      console.log("MULTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>: ")
-      console.log(file)
-      // console.log("REQ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>: ")
-      // console.log(req)
-
       
-
       //cb(null, `${file.originalname}`); // generate specific name
       cb(null, `${time}_${file.originalname}`); // generate random name 
       

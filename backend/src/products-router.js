@@ -42,6 +42,44 @@ routers.get("/id/:id",(req, res) => {
       mensagem: `Error: ${error}`
     })
   }   
+});
+
+
+routers.put("/update/:id",(req, res)=>{
+  console.log("REQ>>>>>>: " + JSON.stringify(req.params))
+  const headers = { 'Content-type' : 'application/json'}
+  try {
+    const response = axios({
+      method: 'put',
+      url: `http://localhost:3000/products/${req.params.id}`,
+      data: 
+      {
+        name: req.body.name,
+        typeProduct: req.body.typeProduct.body,
+        category: req.body.category,
+        description: req.body.description,
+        price: req.body.price,
+        imageName: req.body.imageName  
+
+      }
+        
+        
+      }
+    )
+    .then(response => {
+      if(response){
+        return res.status(200).json(response.data);     
+      }
+      throw new Error('Could not find the products!')
+    });
+    
+  } catch (error) {
+    console.log("ERROR >>>>>>>>>>>>>>>>>>>>")
+    return res.status(400).json({
+      erro: true,
+      mensagem: `Error: ${error}`
+    })
+  } 
 })
 
 routers.delete("/id/:id", (req, res) => {

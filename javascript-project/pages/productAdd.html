@@ -48,29 +48,40 @@
     <section class="content">
       <div class="content_productAdd">
     
-        <!-- modal success -->
-        <div id="modal-success" class="my-modal">
-          <!-- Modal content -->
-          <div id="success" class="my-modal-content">
-            <p>Cadastrado realizado!</p>
-            <i id="close-success" class="fa fa-times" aria-hidden="true"></i>
+         <!-- modal success -->
+        <div id="modal-success" class="modal fade" id="modal-confirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div id="success" class="modal-content ">
+              <div class="modal-exclamation">
+                <p id="modal-message-success" class="message"></p>
+              </div>
+              <div class="modal-close">
+                <i class="close-modal fa fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+              </div>      
+                    
+            </div>
           </div>
         </div>
-
+        
         <!-- modal error -->
-        <div id="modal-error" class="my-modal">
-          <!-- Modal content -->
-          <div id="error" class="my-modal-content">
-            <p>Erro no cadastro!</p>
-            <i id="close-error" class="fa fa-times" aria-hidden="true"></i>
+        <div id="modal-error" class="modal fade" id="modal-confirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div id="error" class="modal-content ">
+              <div class="modal-exclamation">
+                <p id="modal-message-error" class="message"></p>
+              </div>
+              <div class="modal-close">
+                <i class="close-modal fa fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+              </div>            
+            </div>
           </div>
         </div>
-
-        <form id="forms-resgisterpProduct needs-validation" class="forms-productAdd" action="#">
+        
+        <form id="needs-validation" class="form-productAdd" action="#" method="post">
           <div class="form_title"><p>Adicionar novo produto</p></div>
 
           <div class="input_container form-floating mb-3 mt-3">
-            <input type="text" class="form-control" id="product" placeholder="Nome do produto" name="produto" maxlength="20" required>
+            <input type="text" class="form-control" id="product" placeholder="Nome do produto" name="product" maxlength="20" required>
             <label for="product">Nome do produto</label>
             <div class="invalid-feedback">
               Digite um nome
@@ -78,7 +89,7 @@
           </div>
           
           <div class="input_container form-floating mb-3 mt-3">
-            <input type="text" class="form-control" id="type-product" placeholder="Tipo de Produto" name="type-product" required>
+            <input type="text" class="form-control" id="typeProduct" placeholder="Tipo de Produto" name="typeProduct" required>
             <label for="type-product">Tipo de Produto</label>
           </div>
           
@@ -97,12 +108,15 @@
             <label for="description">Descrição do produto</label>
           </div>
           
-          <div class="input_container form-floating mb-3 mt-3">
-            <input type="file" class="form-control" id="img-product" name="img-product" required>
+          <div class="input_container input_imgBox form-floating">
+            <div class="imagePreview">
+              <img id="imagePreviewProduct" src="../imgs/upload.jpg" alt="image-product">
+            </div>
+            <input type="file" class="form-control" id="inputImgProduct" name="inputImgProduct" accept=".png, .jpg, .jpeg" required>
           </div>
 
-          <div class="forms_button-productAdd">
-            <button type="submit" class="buttons btn-normal btn-dark">Adicionar Produto</button>
+          <div class="form_button-productAdd mt-5">
+            <button id="registerProduct" type="submit" class="buttons btn-normal btn-dark">Adicionar Produto</button>
           </div>
         </form>
       </div>
@@ -127,7 +141,7 @@
 
       </div>
 
-      <div class="forms">
+      <div class="form">
         <form action="#">
           <div><p>Fale conosco</p></div>
 
@@ -141,7 +155,7 @@
             <label for="comment">Escreva uma mensagem</label>
           </div>
 
-          <div class="forms_button">
+          <div class="form_button">
             <button class="buttons btn-normal btn-dark">Enviar Mensagem</button>
           </div>
         </form>
@@ -156,6 +170,6 @@
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="module" src="../JS/controllers/productAdd-contrroller.js"></script>
+    <script type="module" src="../JS/controllers/productAdd-controller.js"></script>
   </body>
 </html>
