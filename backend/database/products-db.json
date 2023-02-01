@@ -6,7 +6,7 @@
       "category": "Games",
       "description": "TESTE",
       "price": 233,
-      "imageName": "1673363922514_189715.png",
+      "imageName": "1675016952171_teste.png",
       "id": 2
     },
     {
@@ -20,6 +20,7 @@
     },
     {
       "name": "Batmannn",
+      "typeProduct": "Brinquedo",
       "category": "Diversos",
       "description": "Teste",
       "price": 33,
@@ -46,38 +47,38 @@
     },
     {
       "name": "Xbox",
-      "typeProduct": "Jogo",
+      "typeProduct": "Console",
       "category": "Games",
       "description": "TESTE",
       "price": 233,
-      "imageName": "1673363922514_189716.png",
+      "imageName": "1675197665361_xbox.png",
       "id": 7
     },
     {
       "name": "PS4",
-      "typeProduct": "Jogo",
+      "typeProduct": "Console",
       "category": "Games",
       "description": "TESTE",
       "price": 233,
-      "imageName": "1673363922514_189717.png",
+      "imageName": "1675209133707_teste.png",
       "id": 8
     },
     {
-      "name": "God of War",
-      "typeProduct": "Jogo",
-      "category": "Games",
-      "description": "TESTE",
-      "price": 233,
-      "imageName": "1673363922514_189718.png",
+      "name": "Boneco Sonic",
+      "typeProduct": "Brinquedo",
+      "category": "Diversos",
+      "description": "Super Sonic",
+      "price": 50,
+      "imageName": "1675209958657_unsplash_sYVY_ZKwaxU.png",
       "id": 9
     },
     {
-      "name": "Head Set",
-      "typeProduct": "Eletrónico",
+      "name": "Head Set Edifier",
+      "typeProduct": "Eletrónicos",
       "category": "Periféricos",
       "description": "testeeeeeeeeeeeeeeeeeeeeee",
       "price": 45,
-      "imageName": "1673374004766_33.png",
+      "imageName": "1675211740079_3.png",
       "id": 10
     }
   ]

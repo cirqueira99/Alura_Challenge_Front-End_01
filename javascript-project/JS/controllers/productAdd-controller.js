@@ -18,43 +18,67 @@ const register = async (event) => {
     let message = '';
     
     const product = new Product(productName, productType, productCategory, productPrice, productDescription, productFileName); 
-    const imageClass = new Image()
+    const imageClass = new Image();
     
     try {
-      const productStorage = JSON.parse(sessionStorage.getItem('product')); console.log(productStorage.id)
+      let productStorage = JSON.parse(sessionStorage.getItem('product')); 
       const formData = new FormData();
       formData.append('file', productImage);
   
       if(productStorage){
      
         if( sessionStorage.getItem('lastTimeImg') != productImage.lastModified ){
-          const responseImage = await imageClass.uptadeProductImg(productImage.name);
-          productFileName = responseImage.filename;
+          const responseDelImage = await imageClass.deleleImage(productStorage.imageName);
+          const responsePostImage = await imageClass.uploadProductImg(formData);
+          
+          productFileName = responsePostImage.filename;
+          
+          const productImagePreview = document.getElementById('imagePreviewProduct');
+          productImagePreview.setAttribute('src', `http://localhost:3005/image/file/${productFileName}`);
+        
         }else {
-          productFileName = productImage.name;
+          productFileName = productStorage.imageName;
         } 
+        
         product.setNameImageProduct(productFileName);
         const responsePutProduct = await product.updateProduct(productStorage.id);     
-        message = 'Produto atualizado com sucesso!'
+        
+        message = 'Produto atualizado com sucesso!'         
+        
+        productStorage = {      
+          "id":  product.id,
+          "name": product.name,
+          "typeProduct": product.typeProduct,
+          "category": product.category,
+          "description": product.description,
+          "price": product.price,
+          "imageName": product.imageName
+        }
+        sessionStorage.removeItem('product');
+        sessionStorage.removeItem('lastTimeImg');
+        sessionStorage.setItem("product", JSON.stringify(productStorage));
+
       }else{
-        const responseImage = await product.uploadProductImg(formData);        
+        const responseImage = await imageClass.uploadProductImg(formData);       
         product.setNameImageProduct(responseImage.filename);      
-        const responsePostProduct = await product.postProduct();   
-        message = 'Produto cadastrado com sucesso!'  
+        
+        const responsePostProduct = await product.postProduct(); 
+        message = 'Produto cadastrado com sucesso!'; 
       }     
       
       ModalMessage.renderModalMessage(
         'modal-success', 
         'modal-message-success',
-        message
+        message,
+        'reload'
       );
-      
+
     } catch (error) {
-      console.log(error);
+      //console.log(error);
       ModalMessage.renderModalMessage(
         'modal-error', 
         'modal-message-error',
-        'Não foi possível atualizar o produto!'
+        error
       );
     }
 

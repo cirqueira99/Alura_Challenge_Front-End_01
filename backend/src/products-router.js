@@ -46,7 +46,7 @@ routers.get("/id/:id",(req, res) => {
 
 
 routers.put("/update/:id",(req, res)=>{
-  console.log("REQ>>>>>>: " + JSON.stringify(req.params))
+  console.log("REQ>>>>>>: " + JSON.stringify(req.body))
   const headers = { 'Content-type' : 'application/json'}
   try {
     const response = axios({
@@ -55,7 +55,7 @@ routers.put("/update/:id",(req, res)=>{
       data: 
       {
         name: req.body.name,
-        typeProduct: req.body.typeProduct.body,
+        typeProduct: req.body.typeProduct,
         category: req.body.category,
         description: req.body.description,
         price: req.body.price,

@@ -30,7 +30,8 @@ const confirmDeleteProduct = (event) => {
       ModalMessage.renderModalMessage(
         'modal-success', 
         'modal-message-success',
-        'Produto deletado com sucesso!'
+        'Produto deletado com sucesso!',
+        'reload'
       );
   
     } catch (error) {    

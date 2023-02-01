@@ -1,9 +1,6 @@
+
 .content {
   background: #F5F5F5;
-}
-
-.content_products {
-  padding: 40px 0px;
 }
 
 /* Modals */
@@ -74,21 +71,10 @@
   width: 95%;
 }
 
-/* The Close Button */
-.close-modal {
-  color: #ffffff;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
-.close-modal:hover,
-.close-modal:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.content_products {
+  padding: 40px 0px;
 }
-
 
 .products_topo {
   display: flex;
@@ -111,14 +97,12 @@
 }
 
 .plus {
-  font-size: 24px;
-  cursor: pointer;
-  color: #2A7AE4;
+  display: flex;
 }
 
-.plus:hover{
-  font-size: 28px;
-  color: #286fcd;
+.plus button:hover{
+  background-color: #2467bf;
+  transition: 0.2s;
 }
 
 .gallery {

@@ -7,6 +7,7 @@ const up = async(event) => {
 
   try {
     const product = await productClass.getProduct(id_product);
+    
     const productStorage = {      
       "id":  product.id,
       "name": product.name,
@@ -27,7 +28,7 @@ const up = async(event) => {
     ModalMessage.renderModalMessage(
       'modal-error', 
       'modal-message-error',
-      'Não foi possível ir para página de atualizar prodto!'
+      'Não foi possível ir para página de atualizar produto!'
     );
   }
 }

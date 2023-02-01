@@ -7,6 +7,7 @@ import { RenderGallery } from "../funcionalities/pageHomeAdmin/rederGallery.js";
 const productClass = new Product();
 
 const getProducts = async() => {
+  sessionStorage.clear();
   try {
     const products = await productClass.getProducts();
     

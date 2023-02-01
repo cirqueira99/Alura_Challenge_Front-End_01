@@ -56,7 +56,7 @@ export class Product {
         if(response.ok){
           return response.json()
         }
-        throw new Error('Could not uploaded the product!')
+        throw new Error('Não foi possível cadastrar o produto!')
     })
   }
 
@@ -78,7 +78,7 @@ export class Product {
     .then( response => {
         if(response.ok) return response.json()
        
-        throw new Error('Não foi possível atualizar o produto');
+        throw new Error('Não foi possível atualizar o produto!');
     })
   };
 
