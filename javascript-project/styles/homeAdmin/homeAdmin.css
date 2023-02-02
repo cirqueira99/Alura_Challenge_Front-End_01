@@ -3,75 +3,6 @@
   background: #F5F5F5;
 }
 
-/* Modals */
-
-#confirm {
-  background-color: #F5F5F5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 350px;
-}
-
-.modal-header {
-  background-color: #ff9600;
-  height: 50px;
-}
-
-.modal-header h5{
-  font-weight: 600;
-  color: var(--bs-gray-800);
-}
-
-.modal-exclamation {
-  display: flex;
-  justify-content: center;
-  width: 95%;
-}
-
-.modal-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  text-align: center;
-  font-size: 19px;
-  height: 125px;
-}
-
-.modal-footer {
-  justify-content: center;
-  height: 60px;
-}
-
-.modal-footer .btn {
-  width: 20%;
-}
-
-#success, #error {
-  flex-direction: row;
-  padding: 10px 20px;  
-  color: white;
-  height: 70px;
-}
-
-#success{
-  background-color: #037a19;
-}
-
-#error{
-  background-color: #c73030fa;
-}
-
-.message {
-  text-align: center;
-  margin: 0px;
-  width: 95%;
-}
-
-
 .content_products {
   padding: 40px 0px;
 }
@@ -105,7 +36,7 @@
   transition: 0.2s;
 }
 
-.gallery {
+.gallery_cards {
   display: flex;
   flex-flow: wrap;
 }
@@ -114,6 +45,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 
   margin: 35px 8px;
 }

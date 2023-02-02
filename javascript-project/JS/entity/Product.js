@@ -23,7 +23,7 @@ export class Product {
         if(response.ok){
           return response.json()
         }
-        throw new Error('Could not find the product!')
+        throw new Error('Não foi possível encontrar o produto!');
     })
   }  
 
@@ -33,7 +33,7 @@ export class Product {
         if(response.ok){
           return response.json()
         }
-        throw new Error('Could not find the products!')
+        throw new Error('Não foi possível encontrar os produtos!');
     })
   }  
 
@@ -56,7 +56,7 @@ export class Product {
         if(response.ok){
           return response.json()
         }
-        throw new Error('Não foi possível cadastrar o produto!')
+        throw new Error('Não foi possível cadastrar o produto!');
     })
   }
 

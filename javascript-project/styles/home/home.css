@@ -8,7 +8,7 @@
   height: 315px;
 }
 
-.galley-topo {
+.gallery-topo {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -17,11 +17,12 @@
   height: 40px;
 }
 
-.galley-topo p {
+.gallery-topo p {
   margin: 0px;
 }
 
 .gallery-title {
+  color: #464646;
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
@@ -34,12 +35,12 @@
   color: #2A7AE4;
 }
 
-.galley_cards {
+.gallery_cards {
   display: flex;
   justify-content: flex-start;
 }
 
-.galley_card {
+.gallery_card {
   display: flex;
   flex-direction: column;
   align-items: center;

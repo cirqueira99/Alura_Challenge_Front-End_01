@@ -12,12 +12,18 @@ const renderModalMessage = (modalName, tagMessage, modalMessage, nextPage='') =>
   }
 
   $(modal).on('hidden.bs.modal', (e) => {
-    if(nextPage != '') location.reload();   
+    if(nextPage == 'reload'){
+      location.reload();   
+    } else
+    if(nextPage == 'return') {
+      window.history.back();
+    }
+    
   })
 
   setTimeout(function() {
     $(modal).modal('hide');    
-  }, 3000)
+  }, 4000)
 
 }
 

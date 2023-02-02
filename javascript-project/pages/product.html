@@ -28,7 +28,7 @@
       <div class="menu">
         <nav>        
           <div class="menu_logo">
-            <a href="../index.html"><img src="../imgs/Logo.png" alt="" srcset=""></a>
+            <a href="../index.html"><img src="../imgs/Logo.png" alt="logo alura" ></a>
           </div>
 
           <div class="menu_search">
@@ -36,7 +36,9 @@
             <i class="fa fa-search ml-2" aria-hidden="true"></i>
           </div>
           
-          <div class="menu_login"></div>
+          <div class="menu_login">
+            <button class="buttons btn-normal btn-light"> <a href="./pages/login.html">Login</a></button>
+          </div>
 
           <div class="menu_icon-search">
             <i class="fa fa-search ml-2" aria-hidden="true"></i>
@@ -46,24 +48,73 @@
     </header>
 
     <section class="content">
+      <!-- modal confirm -->
+      <div id="modal-confirm" class="modal fade"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-exclamation">
+                      <h5 class="modal-title ms-3 ">Excluir Produto!</h5>
+                    </div>
+                    <div class="modal-close">
+                      <i class="close-modal fa fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                </div>
+                <div class="modal-body">
+                  <p id="modal-message-confirm" class="message"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-confirm">Sim</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Não</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- modal success -->
+      <div id="modal-success" class="modal fade" id="modal-confirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div id="success" class="modal-content ">
+            <div class="modal-exclamation">
+              <p id="modal-message-success" class="message"></p>
+            </div>
+            <div class="modal-close">
+              <i class="close-modal fa fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+            </div>      
+                  
+          </div>
+        </div>
+      </div>
+      
+      <!-- modal error -->
+      <div id="modal-error" class="modal fade" id="modal-confirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div id="error" class="modal-content ">
+            <div class="modal-exclamation">
+              <p id="modal-message-error" class="message"></p>
+            </div>
+            <div class="modal-close">
+              <i class="close-modal fa fa-times" data-bs-dismiss="modal" aria-label="Close"></i>
+            </div>            
+          </div>
+        </div>
+      </div>
+
       <div class="content_product">
 
        <div class="product">
-        <div class="product-image">
-          <img src="../imgs/star-wars-BIG.png" alt="" srcset="">
+        <div class="product_image">
+          <img id="image" src="" alt="product image" height="400">
         </div>
-        <div class="product-info">
-          <p id="product_name" class="product-name">Produto XYZ</p>
-          <p id="product_price" class="product-price">R$ 60,00</p>
-          <div id="product_desc" class="product-description">
-            Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam.
-          </div>
+        <div class="product_info">
+          <p id="product_name" class="product-name"></p>
+          <p id="product_price" class="product-price"></p>
+          <div id="product_desc" class="product-description"></div>
         </div>
        </div>
 
-       <div class="products-similars">
-        
-        <div class="galley-topo">
+       <div class="products_similars">        
+        <div class="gallery-topo">
           <p class="gallery-title">Produtos Similares</p>
           <p class="gallery-link">Ver Tudo <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
         </div>

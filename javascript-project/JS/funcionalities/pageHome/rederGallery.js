@@ -36,7 +36,7 @@ const createDivGallery = (category, products) => {
     const money = product.price?.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     const card = 
     `
-    <div id="${product.id}" class="galley_card">
+    <div id="${product.id}" class="gallery_card">
       <div class="image">
         <img src="http://localhost:3005/image/file/${product.imageName}" width="176px" height="174px" alt="" srcset="">
       </div>
