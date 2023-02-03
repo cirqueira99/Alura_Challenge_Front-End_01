@@ -2,7 +2,10 @@ import { Product } from "../entity/Product.js";
 import { Image } from "../entity/Image.js";
 import { ModalMessage } from "../funcionalities/shared/modal-message.js";
 import { atribuiteForm } from "../funcionalities/pageProductAdd/atribuiteValuesForm.js";
+import { CreateHtmlModals } from "../funcionalities/shared/createTagHtmlModal.js";
 
+
+CreateHtmlModals.create();
 
 const register = async (event) => {
   if(event){

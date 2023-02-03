@@ -1,4 +1,7 @@
-/* content */
+.content {
+  padding-top: 50px;
+  min-height: 650px;
+}
 
 .content_forms {
   display: flex;

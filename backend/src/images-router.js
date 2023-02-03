@@ -18,7 +18,7 @@ routers.post("/upload", multer(multerConfig).single("file"), (req, res) => {
 
   return res.status(400).json({
     erro: true,
-    mensagem: "Erro: Upload não realizado!"
+    mensagem: "Erro: could not upload image!"
   })
 });
 

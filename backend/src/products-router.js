@@ -53,24 +53,20 @@ routers.put("/update/:id",(req, res)=>{
       method: 'put',
       url: `http://localhost:3000/products/${req.params.id}`,
       data: 
-      {
-        name: req.body.name,
-        typeProduct: req.body.typeProduct,
-        category: req.body.category,
-        description: req.body.description,
-        price: req.body.price,
-        imageName: req.body.imageName  
-
-      }
-        
-        
+        {
+          name: req.body.name,
+          typeProduct: req.body.typeProduct,
+          category: req.body.category,
+          description: req.body.description,
+          price: req.body.price,
+          imageName: req.body.imageName  
+        }        
       }
     )
     .then(response => {
       if(response){
         return res.status(200).json(response.data);     
       }
-      throw new Error('Could not find the products!')
     });
     
   } catch (error) {
@@ -91,7 +87,7 @@ routers.delete("/id/:id", (req, res) => {
         console.log("Product " + response.data.name +" deleted!");
         return res.status(200).json(response.data);
       }
-      throw new Error('Could not delete the products!')
+      throw new Error('Could not delete the product!')
     });
 
   } catch (error) {

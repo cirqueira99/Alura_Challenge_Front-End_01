@@ -2,7 +2,10 @@ import { Product } from "../entity/Product.js";
 import { RenderGalleryHomeAdmin } from "../funcionalities/pageHomeAdmin/rederGallery.js";
 import { DeleteProduct } from "../funcionalities/pageHomeAdmin/deleteProduct.js";
 import { UpdateProduct } from "../funcionalities/pageHomeAdmin/uptadeProduct.js";
+import { CreateHtmlModals } from "../funcionalities/shared/createTagHtmlModal.js";
 
+
+CreateHtmlModals.create();
 
 const productClass = new Product();
 
