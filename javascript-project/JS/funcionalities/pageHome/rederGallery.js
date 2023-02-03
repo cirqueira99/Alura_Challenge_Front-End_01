@@ -1,52 +1,72 @@
-import { Product } from "../../entity/Product.js";
+import { CreateDivGalleryCard } from "../shared/renderGallleryCard.js"; 
 
-const productClass = new Product();
+const galleryGroups = (products) => {
 
-export const renderGallery = async() => {
+  let gallerys_categories = [];
+  let categories = [];
+
+  products.sort((productOne, productTwo)=>{
+    if(productOne.category > productTwo.category)  return 1;
+    if(productOne.category < productTwo.category)  return -1;
+
+    return 0;
+  });
+  
+  let last_category = products[0].category;
+  let group = [];
+
+  products.forEach((product)=>{
+    if(!gallerys_categories.includes(product.category)) gallerys_categories.push(product.category);
+
+    if(product.category != last_category){
+      last_category = product.category;
+      categories.push(group);
+      group = [];
+    }
     
-  const gallerys_classes = ['games', 'peripherals', 'various'];
-  let categories = [[], [], []];
+    group.push(product);
+  });
 
-  const product = new Product();
-  const list_products = await product.getProducts();
+  categories.push(group);
 
-  list_products.forEach( (product) => {
-    if(product.category == 'Games'){
-      categories[0].push(product);
-    }else
-    if(product.category == 'Periféricos'){
-      categories[1].push(product);
-      }else
-    if(product.category == 'Diversos'){
-      categories[2].push(product);
-    }  
-  })
+  console.log(gallerys_categories)
+  console.log(categories)
 
-  gallerys_classes.forEach( (category, index) => {
-    createDivGallery(category, categories[index]);
+  gallerys_categories.forEach( (category, index) => {
+    createContainerGallery(category);
+    renderGallery(category, categories[index]);
   })
 }
 
-const createDivGallery = (category, products) => {
-  const gallery_container = document.getElementById('container_' + category)
-  const gallery_category = document.getElementById('gallery_' + category);
+const createContainerGallery = (category) => {
+  var newForm_category = category.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+  const gallery = document.getElementsByClassName('gallery')[0];
+  const gallery_container = document.createElement('div');
+  gallery_container.setAttribute('id', 'container_' + newForm_category);
+  gallery_container.setAttribute('class', 'gallery_container');
+
+  let gallery_container_text = 
+    `
+    <div class="gallery-topo">
+      <p class="gallery-title">${category}</p>
+      <p class="gallery-link">Ver Tudo <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+    </div>
+    
+    <div id="gallery_${newForm_category}" class="gallery_cards"></div>`;
+
+  gallery_container.innerHTML = gallery_container_text;
+  gallery.appendChild(gallery_container);
+};
+
+const renderGallery = (category, products) => {
+  var newForm_category = category.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+  const gallery_container = document.getElementById('container_' + newForm_category)
+  const gallery_category = document.getElementById('gallery_' + newForm_category);
   let elements_gallery = ``;
 
   products.forEach((product) => {
     const money = product.price?.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    const card = 
-    `
-    <div id="${product.id}" class="gallery_card">
-      <div class="image">
-        <img src="http://localhost:3005/image/file/${product.imageName}" width="176px" height="174px" alt="" srcset="">
-      </div>
-      <div class="gallery_description">
-        <p class="description_product">${product.name}</p>
-        <p class="description_price"><strong>${money}</strong></p>
-        <p class="description_link"> <a href="../../../pages/product.html?id=${product.id}">Ver Produto</a></p>
-      </div>        
-    </div>
-    `;
+    const card = CreateDivGalleryCard.create(product);
 
     elements_gallery += card; 
   
@@ -56,4 +76,8 @@ const createDivGallery = (category, products) => {
 
   gallery_container.appendChild(gallery_category);
   // console.log(gallery_category)
+}
+
+export const RenderGalleryHome = {
+  galleryGroups
 }

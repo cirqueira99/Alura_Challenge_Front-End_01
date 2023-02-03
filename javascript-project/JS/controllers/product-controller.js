@@ -1,5 +1,5 @@
 import { Product } from "../entity/Product.js"
-import { RenderProduct } from "../funcionalities/pageProduct/rederProduct.js";
+import { RenderGalleryProduct } from "../funcionalities/pageProduct/rederProduct.js";
 import { ModalMessage } from "../funcionalities/shared/modal-message.js";
 
 
@@ -21,7 +21,7 @@ const getProductSimilars = async(productCentral) => {
       }
     });
   
-    RenderProduct.renderProductsSimilars(products_similars);
+    RenderGalleryProduct.renderProductsSimilars(products_similars);
     
   } catch (error) {
     console.log(error);
@@ -37,7 +37,7 @@ const getProduct = async() => {
   try {
     const product = await productClass.getProduct(id_product);
   
-    RenderProduct.renderProduct(product);
+    RenderGalleryProduct.renderProduct(product);
     
     getProductSimilars(product);
     

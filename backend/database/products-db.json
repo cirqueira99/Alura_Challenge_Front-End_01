@@ -80,6 +80,15 @@
       "price": 45,
       "imageName": "1675211740079_3.png",
       "id": 10
+    },
+    {
+      "name": "Camiseta Sonic",
+      "typeProduct": "Camiseta",
+      "category": "Roupas",
+      "description": "Camiseta do Sonic mega power ultra",
+      "price": 53,
+      "imageName": "1675364211775_camiseta.png",
+      "id": 11
     }
   ]
 }

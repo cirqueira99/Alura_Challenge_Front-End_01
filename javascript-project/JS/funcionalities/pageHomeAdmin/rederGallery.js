@@ -14,6 +14,6 @@ const renderGallery = async(products) => {
   gallery_category.innerHTML = elements_gallery; 
 }
 
-export const RenderGallery = {
+export const RenderGalleryHomeAdmin = {
   renderGallery
 }

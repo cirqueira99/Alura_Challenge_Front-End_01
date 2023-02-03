@@ -1,7 +1,7 @@
 import { Product } from "../entity/Product.js";
+import { RenderGalleryHomeAdmin } from "../funcionalities/pageHomeAdmin/rederGallery.js";
 import { DeleteProduct } from "../funcionalities/pageHomeAdmin/deleteProduct.js";
 import { UpdateProduct } from "../funcionalities/pageHomeAdmin/uptadeProduct.js";
-import { RenderGallery } from "../funcionalities/pageHomeAdmin/rederGallery.js";
 
 
 const productClass = new Product();
@@ -11,7 +11,7 @@ const getProducts = async() => {
   try {
     const products = await productClass.getProducts();
     
-    RenderGallery.renderGallery(products);
+    RenderGalleryHomeAdmin.renderGallery(products);
   
     const deleteProduct_icons = document.getElementsByClassName('icon-delete');
     const editProduct_icons = document.getElementsByClassName('icon-edit');
@@ -28,3 +28,7 @@ const getProducts = async() => {
 
 getProducts();
 
+const btn_add = document.getElementById('btn_add');
+btn_add.addEventListener('click', ()=>{
+  window.location.href = 'http://127.0.0.1:8080/pages/productAdd.html';
+})

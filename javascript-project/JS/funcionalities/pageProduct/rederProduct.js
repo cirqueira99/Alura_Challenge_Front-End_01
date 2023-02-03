@@ -36,7 +36,7 @@ const renderProductsSimilars = (products) => {
 
 }
 
-export const RenderProduct = {
+export const RenderGalleryProduct = {
   renderProduct,
   renderProductsSimilars
 }
