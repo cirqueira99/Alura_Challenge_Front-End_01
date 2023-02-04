@@ -1,15 +1,28 @@
 
 export class User {
   
-  constructor(username="", password=""){ }
+  constructor(email="", password=""){
+    this.email = email;
+    this.password = password;
+   }
 
-  getUser = () => {
-    return fetch(`http://localhost:3000/users`)
+  getUser(){
+    return fetch(`http://localhost:3005/user/verify`, {
+      method: 'POST',
+       headers: {
+        'Content-Type' : 'application/json'
+      },
+      body: JSON.stringify({
+        email: this.email,
+        password: this.password,
+        
+      })
+    })
     .then(resposta => {
         if(resposta.ok){
           return resposta.json()
         }
-        throw new Error('Não foi possível encontrar os produtos!')
+        throw new Error('Could not login!')
     })
   }  
 

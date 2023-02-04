@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run server\" \" npm run ts\"",
     "ts": "tsnd ./index.ts",
-    "server": "json-server --watch ./database/products-db.json"
+    "server": "json-server --watch ./database/db.json"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "json-server": "^0.17.1",
+    "md5": "^2.3.0",
     "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {

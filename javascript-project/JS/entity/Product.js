@@ -28,7 +28,9 @@ export class Product {
   }  
 
   getProducts = () => {
-    return fetch(`http://localhost:3005/products/all`)
+    return fetch(`http://localhost:3005/products/all`,{
+      method: 'GET'
+    })
     .then(response => {
         if(response.ok){
           return response.json()

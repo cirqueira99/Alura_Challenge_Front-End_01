@@ -17,6 +17,9 @@ const renderModalMessage = (modalName, tagMessage, modalMessage, nextPage='') =>
     } else
     if(nextPage == 'return') {
       window.history.back();
+    }else
+    if(nextPage != ''){
+      window.location.href = nextPage;
     }
     
   })
