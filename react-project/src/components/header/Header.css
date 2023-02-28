@@ -1,0 +1,15 @@
+header {
+  width: 1441px;
+}  
+
+header {  
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.banner {
+  width: 1440px;
+  height: 352px;
+}
