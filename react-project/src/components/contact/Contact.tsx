@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Contact.module.css";
-import { Form } from "react-bootstrap";
+import { Form, Input, Label } from "reactstrap";
+import classNames from "classnames";
+import Btn from "components/Buttons/Button";
+
 
 const Contact = () => {
   return(
@@ -22,22 +25,22 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className={styles.forms}>
+      <div className={styles.contact_forms}>
         <Form action="#">
-          <div><p>Fale conosco</p></div>
+          <div className={styles.form_title}><p>Fale conosco</p></div>
 
-          <div>
-            <input type="text" id="email" placeholder="Enter email" name="email" required></input>
-            <label htmlFor="email">Email</label>
+          <div className={classNames(styles.input_container, 'form-floating')}>
+            <Input id='email' placeholder="Enter email" name="email" required></Input>
+            <Label for='email'>Email</Label>
           </div>
 
-          <div>
-            <textarea id="comment" name="text" placeholder="Escreva uma mensagem" required></textarea>
-            <label htmlFor="comment">Escreva uma mensagem</label>
+          <div className={classNames(styles.input_container, 'form-floating')}>
+            <Input type="textarea" id="comment" name="text" placeholder="Escreva uma mensagem" required></Input>
+            <Label for='comment'>Escreva uma mensagem...</Label>
           </div>
 
           <div className={styles.forms_button}>
-            <button type="submit">Enviar Mensagem</button>
+            <Btn text='Enviar Mensagem' styles='dark'></Btn>
           </div>
         </Form>
       </div>

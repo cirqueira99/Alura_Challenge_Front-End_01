@@ -1,10 +1,9 @@
 .menu {
   background-color: white;
-
   height: 115px;  
 }
 
-.menu nav {
+.menu_nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,7 +52,7 @@
   height: 51px;
 }
 
-.menu_icon-search {
+.menu_icon_search {
   display: none;
   height: 40px;
 }

@@ -1,27 +1,24 @@
-import React from 'react';
 import styles from './Menu.module.css';
-import { Button } from 'react-bootstrap';
-
+import { BiSearch } from 'react-icons/bi'
+import Btn from 'components/Buttons/Button';
 
 const Menu = () => {
   return(
     <div className={styles.menu}>
-      <nav>
+      <nav className={styles.menu_nav}>
         <div className={styles.menu_logo}>
           <img src="./assets/Logo.png" alt="logoAlura"></img>
         </div>
 
         <div className={styles.menu_search}>
           <input className="form-control" type="text" name="" id="" placeholder="O que deseja encontrar"></input>
-          <i className="fa fa-search ml-2" aria-hidden="true"></i>
+          <BiSearch/>
         </div>        
 
-        <div className="menu_login">
-          <button className="buttons btn-normal btn-light"> <a href="./pages/login.html">Login</a></button>
-        </div>
+        <Btn text='Login' styles='light' href='./pages/login.html'/>
 
-        <div className="menu_icon-search">
-          <i className="fa fa-search ml-2" aria-hidden="true"></i>
+        <div className={styles.menu_icon_search}>
+          <BiSearch/>
         </div>
       </nav>
     </div>

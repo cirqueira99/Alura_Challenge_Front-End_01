@@ -31,17 +31,26 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  list-style-type: none;
   height: 240px;
 }
 
-.contact .forms form { 
+.contact_topics ul li {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.contact_forms form { 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  font-weight: 500;
+  font-size: 16px;
   height: 240px;
 }
 
-.forms p {  
+.form_title p{
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -55,7 +64,14 @@
   height: 82px;
 }
 
+.input_container input {
+  border: 0;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
 .input_container textarea {
   height: 82px;
   width: 560px;
 }
+

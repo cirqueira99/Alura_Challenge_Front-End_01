@@ -1,0 +1,33 @@
+
+.buttons {
+  border: 1px solid #2A7AE4;
+  font-size: 16px;
+  height: 50px;
+  width: 182px;
+}
+
+.btn_small {
+  font-size: 14px;
+  height: 40px;
+}
+
+.btn_dark {
+  background: #2A7AE4;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn_dark:hover {
+  background: #1f5fb1;
+  color: white;
+}
+
+.btn_light {
+  background: #ffffff;
+  color: #2A7AE4;
+  transition: 0.3s;
+}
+
+.btn_light:hover {
+  background: #aacaf4;
+}
