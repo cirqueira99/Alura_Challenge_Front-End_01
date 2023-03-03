@@ -1,0 +1,17 @@
+.content {
+  background: #F5F5F5;
+  padding-left: 150px;
+  padding-right: 150px;
+  min-height: 550px;
+  width: 1440px;
+}
+
+.plus {
+  display: flex;
+}
+
+.plus button:hover{
+  background-color: #2467bf;
+  transition: 0.2s;
+}
+

@@ -1,0 +1,39 @@
+.gallery_container {
+  margin: 50px 0px;
+  height: 315px;
+}
+
+.gallery_topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  margin: 15px 0px;
+  height: 40px;
+}
+
+.gallery_title {
+  color: #464646;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.gallery_link {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+  color: #2A7AE4;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  
+  width: 100px;
+}
+
+.gallery_cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+}

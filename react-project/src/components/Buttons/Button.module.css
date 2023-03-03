@@ -1,14 +1,17 @@
 
 .buttons {
   border: 1px solid #2A7AE4;
-  font-size: 16px;
-  height: 50px;
   width: 182px;
 }
 
 .btn_small {
   font-size: 14px;
   height: 40px;
+}
+
+.btn_big {
+  font-size: 16px;
+  height: 50px;
 }
 
 .btn_dark {

@@ -23,12 +23,8 @@ const renderProductsSimilars = (products) => {
     products.forEach((product, index) => {
       if(index < 6 ){      
         const card = CreateDivGalleryCard.create(product);    
-        elements_gallery += card; 
-  
-      }else {
-        return;
-      }
-    
+        elements_gallery += card;   
+      }    
     });
   }
   

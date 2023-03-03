@@ -15,7 +15,7 @@ const Menu = () => {
           <BiSearch/>
         </div>        
 
-        <Btn text='Login' styles='light' href='./pages/login.html'/>
+        <Btn text='Login' styles='light' size='btn_big' href='./pages/login.html'/>
 
         <div className={styles.menu_icon_search}>
           <BiSearch/>

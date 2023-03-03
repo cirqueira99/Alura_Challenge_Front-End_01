@@ -6,17 +6,19 @@ interface BtnProps {
   type?: string | undefined;
   text: string;
   styles: string;
+  size: string
 }
 
 const Btn = (props: BtnProps) => {
   return (
-    
       <button
         className={classNames(
           [styles.buttons],
-          props.styles === 'dark'? styles['btn_dark'] :  styles['btn_light']
+          props.styles === 'dark'? styles['btn_dark'] :  styles['btn_light'],
+          [styles[props.size]]
         )}
-      >{props.text}</button>
+      >{props.text}
+      </button>
    
   )
 }

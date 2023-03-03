@@ -9,20 +9,19 @@ import Product from './pages/Product';
 import Menu from './components/menu/Menu';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import Header from 'components/header/Header';
+
 
 const AppRouter = () => {
   return(
     <div className={styles.body}>
       <Router>
         <Menu/>
-        <Header/>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="home" element={<Home/>}></Route>
           <Route path="login" element={<Login/>}></Route>
           <Route path="homeAdmin" element={<HomeAdmin/>}></Route>
           <Route path="productAdd" element={<ProductAdd/>}></Route>
-          <Route path="produc" element={<Product/>}></Route>
+          <Route path="product" element={<Product/>}></Route>
           <Route path="*" element={<Home/>}></Route>
         </Routes>
         <Contact/>

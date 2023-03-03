@@ -40,7 +40,7 @@ const Contact = () => {
           </div>
 
           <div className={styles.forms_button}>
-            <Btn text='Enviar Mensagem' styles='dark'></Btn>
+            <Btn text='Enviar Mensagem' styles='dark' size="btn_small"></Btn>
           </div>
         </Form>
       </div>

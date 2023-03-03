@@ -1,9 +1,7 @@
-
-.content_product {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px 0px;
+.content {
+  background: #F5F5F5;
+  padding: 50px 150px;
+  width: 1440px;
 }
 
 .product {
@@ -28,20 +26,16 @@
   width: 60%;
 }
 
-.product-name {
+.product_name {
   font-weight: 500;
   font-size: 52px;
   line-height: 61px;
 }
 
-.product-price {
+.product_price {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-}
-
-.product-description {
-  
 }
 
 .notContains {

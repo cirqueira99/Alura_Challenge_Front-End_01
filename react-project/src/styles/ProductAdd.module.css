@@ -1,3 +1,8 @@
+.content {
+  background: #F5F5F5;
+  padding: 50px 150px;
+  width: 1440px;
+}
 
 .content_productAdd form p {  
   font-weight: 700;
@@ -21,15 +26,20 @@
   width: 100%;
 }
 
+/* Form */
+
+.input_container {
+  margin: 20px 0px;
+}
+
 .input_container input {
   border: 0;
   border-radius: 0px;
   border-bottom: 1px solid #ccc;
 }
 
-/* Form */
-.form_button-productAdd button {
-  width: 100%;
+.input_container label {
+  opacity: 0.7;
 }
 
 .input_imgBox {
@@ -42,12 +52,13 @@
   height: 300px;
 }
 
-
 .imagePreview {
+  display: flex;
+  justify-content: center;
   background-color: white;
   border-radius: 5px;
   height: 150px;
-  width: 150px;
+  width: 100%;
 }
 
 .imagePreview img{
@@ -59,32 +70,10 @@
   margin-top: 10px;
   width: 70%;
 }
-
-/* Modals */
-
-.modal-exclamation {
-  display: flex;
-  justify-content: center;
-  width: 95%;
+.form_productAdd {
+  width: 500px;
 }
 
-#success, #error {
-  flex-direction: row;
-  padding: 10px 20px;  
-  color: white;
-  height: 70px;
-}
-
-#success{
-  background-color: #037a19;
-}
-
-#error{
-  background-color: #c73030fa;
-}
-
-.message {
-  text-align: center;
-  margin: 0px;
-  width: 95%;
+.form_button_productAdd button {
+  width: 100%;
 }
